@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minimalist Site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <h1 id="navTitle">MySite</h1>
+    <ul>
+      <li><a href="index.html" data-key="navHome">Home</a></li>
+      <li><a href="about.html" data-key="navAbout">About</a></li>
+      <li><a href="contact.html" data-key="navContact">Contact</a></li>
+    </ul>
+    <select id="langSelector">
+      <option value="en">EN</option>
+      <option value="es">ES</option>
+      <option value="fr">FR</option>
+    </select>
+  </nav>
+
+  <section class="landing">
+    <h2 data-key="landingTitle">Welcome to My Minimalist Site</h2>
+    <p data-key="landingText">Clean, simple, and fast — built with pure HTML, CSS, and JS.</p>
+  </section>
+
+  <footer>
+    <p data-key="footerText">© 2025 MySite. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
