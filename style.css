@@ -13,6 +13,11 @@ body {
   min-height: 100vh;
 }
 
+
+.landing {
+  background-image: url('Assets/Background\ Image.jpg');
+}
+
 /*
 body {
   background: linear-gradient(270deg, #89f7fe, #66a6ff);
