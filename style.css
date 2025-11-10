@@ -57,6 +57,12 @@ section {
   padding: 3rem;
 }
 
+
+.divText {
+    margin-top: 35px;
+    width: 75%;
+}
+
 .cta {
   margin-top: 1rem;
   background: #333;
