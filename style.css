@@ -32,6 +32,8 @@ body {
 }
 */
 
+/* Navigation */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -39,6 +41,11 @@ nav {
   padding: 1rem 2rem;
   background: #fff;
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+
+img#logoImage {
+    width: 3%;
 }
 
 nav ul {
