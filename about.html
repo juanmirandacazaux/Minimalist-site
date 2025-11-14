@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <nav>
     <h1 id="navTitle">MySite</h1>
@@ -21,24 +23,97 @@
     </select>
   </nav>
 
-  <section>
-    <h2 data-key="aboutTitle">About Us</h2>
-    <p data-key="aboutText">
-      We believe simplicity is the ultimate sophistication. Our team builds lightweight websites that focus on content and clarity.
-    </p>
+  <div class="container">
+    <h1>Galerías — Contenedor único con varias secciones</h1>
+    <p class="lead">Ejemplo de un <code>&lt;div&gt;</code> que contiene varias galerías (secciones) independientes. Cada
+      galería tiene su título, descripción y una cuadrícula de miniaturas. Al hacer clic se abre una vista ampliada
+      (lightbox) con la imagen y su leyenda.</p>
 
-    <div class="divText">
-    <pdata-key="introductionText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel feugiat orci. Nullam venenatis leo id ante efficitur euismod. Proin sit amet massa viverra, dignissim velit interdum, molestie ipsum. Maecenas rhoncus eros eros, et pretium purus faucibus vitae. Mauris tempor odio et sapien venenatis malesuada. Sed et sem in lectus convallis eleifend. Duis lobortis lectus ex, a dictum tellus lobortis at. Duis vulputate lacus lorem, vitae pellentesque turpis interdum a. Sed egestas eleifend orci eu venenatis. Vestibulum non leo in nibh laoreet accumsan. Phasellus ut purus id erat pretium vestibulum. Sed tempus lorem interdum nibh venenatis rutrum.</p>
-  </div>
-  <div class="divText">
-    <pdata-key="introductionText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel feugiat orci. Nullam venenatis leo id ante efficitur euismod. Proin sit amet massa viverra, dignissim velit interdum, molestie ipsum. Maecenas rhoncus eros eros, et pretium purus faucibus vitae. Mauris tempor odio et sapien venenatis malesuada. Sed et sem in lectus convallis eleifend. Duis lobortis lectus ex, a dictum tellus lobortis at. Duis vulputate lacus lorem, vitae pellentesque turpis interdum a. Sed egestas eleifend orci eu venenatis. Vestibulum non leo in nibh laoreet accumsan. Phasellus ut purus id erat pretium vestibulum. Sed tempus lorem interdum nibh venenatis rutrum.</p>
-  </div>
-  </section>
 
-  <footer>
-    <p data-key="footerText">© 2025 MySite. All rights reserved.</p>
-  </footer>
+    <div id="galleries" class="galleries">
 
-  <script src="script.js"></script>
+
+      <!-- Galería 1: Naturaleza -->
+      <section class="gallery" data-gallery="naturaleza">
+        <div class="gallery-header">
+          <h2>Naturaleza</h2>
+          <div class="controls"><span class="muted">8 imágenes</span></div>
+        </div>
+        <div class="thumb-grid">
+          <!-- Usamos imágenes públicas de Unsplash como ejemplo -->
+          <button class="thumb"
+            data-src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1500&auto=format&fit=crop"
+            aria-label="Montañas al amanecer">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=800&auto=format&fit=crop"
+              alt="Montañas al amanecer">
+            <div class="meta">Montañas</div>
+          </button>
+          <button class="thumb"
+            data-src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1500&auto=format&fit=crop"
+            aria-label="Lago tranquilo">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=800&auto=format&fit=crop"
+              alt="Lago tranquilo">
+            <div class="meta">Lago</div>
+          </button>
+          <button class="thumb"
+            data-src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1500&auto=format&fit=crop"
+            aria-label="Bosque en otoño">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=800&auto=format&fit=crop"
+              alt="Bosque en otoño">
+            <div class="meta">Bosque</div>
+          </button>
+          <button class="thumb"
+            data-src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1500&auto=format&fit=crop"
+            aria-label="Cascada">
+            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=800&auto=format&fit=crop"
+              alt="Cascada">
+            <div class="meta">Cascada</div>
+          </button>
+        </div>
+      </section>
+
+
+      <!-- Galería 2: Ciudad -->
+      <section class="gallery" data-gallery="ciudad">
+        <div class="gallery-header">
+          <h2>Ciudad</h2>
+          <div class="controls"><span class="muted">6 imágenes</span></div>
+        </div>
+        <div class="thumb-grid">
+          <button class="thumb"
+            data-src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=1500&auto=format&fit=crop"
+            aria-label="Rascacielos nocturno">
+            <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=800&auto=format&fit=crop"
+              alt="Rascacielos nocturno">
+            <div class="meta">Rascacielos</div>
+          </button>
+          <button class="thumb"
+            data-src="https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?q=80&w=1500&auto=format&fit=crop"
+            aria-label="Calles de la ciudad">
+            <img src="https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?q=80&w=800&auto=format&fit=crop"
+              alt="Calles de la ciudad">
+            <div class="meta">Calles</div>
+          </button>
+          <button class="thumb"
+            data-src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?q=80&w=1500&auto=format&fit=crop"
+            aria-label="Café en la vereda">
+            <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?q=80&w=800&auto=format&fit=crop"
+              alt="Café en la vereda">
+            <div class="meta">Café</div>
+          </button>
+          <button class="thumb"
+            data-src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=1500&auto=format&fit=crop"
+            aria-label="Puente iluminado">
+            <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=800&auto=format&fit=crop"
+              alt="Puente iluminado">
+            <div class="meta">Puente</div>
+        </div>
+
+        <footer>
+          <p data-key="footerText">© 2025 MySite. All rights reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
 </body>
+
 </html>

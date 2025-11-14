@@ -62,3 +62,46 @@ document.addEventListener("DOMContentLoaded", () => {
     setLanguage(e.target.value);
   });
 });
+
+
+/* About Us */
+// Lightbox behaviour: open with image src + caption, close on background or button
+(function () {
+  const lightbox = document.getElementById('lightbox');
+  const lbImg = lightbox.querySelector('img');
+  const lbCaption = lightbox.querySelector('.caption');
+  const lbClose = lightbox.querySelector('.lb-close');
+
+
+  function openLightbox(src, alt) {
+    lbImg.src = src;
+    lbImg.alt = alt || '';
+    lbCaption.textContent = alt || '';
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    // trap focus lightly
+    lbClose.focus();
+  }
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    lbImg.src = '';
+  }
+
+
+  document.querySelectorAll('.thumb').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const src = btn.dataset.src;
+      const alt = btn.querySelector('img')?.alt || '';
+      openLightbox(src, alt);
+    });
+    btn.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); btn.click(); }
+    })
+  });
+
+
+  lbClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+})();
