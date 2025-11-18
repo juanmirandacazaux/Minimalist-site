@@ -23,91 +23,65 @@
     </select>
   </nav>
 
-  <div class="container">
-    <h1>Galerías — Contenedor único con varias secciones</h1>
-    <p class="lead">Ejemplo de un <code>&lt;div&gt;</code> que contiene varias galerías (secciones) independientes. Cada
-      galería tiene su título, descripción y una cuadrícula de miniaturas. Al hacer clic se abre una vista ampliada
-      (lightbox) con la imagen y su leyenda.</p>
+  <!-- ABOUT SECTION -->
+    <div class="section aboutSection">
+        <h2>Who We Are</h2>
+        <p>
+            We are a passionate group dedicated to creating meaningful digital experiences.
+            Our vision is to deliver high-quality solutions that help people connect, learn,
+            and grow. With years of experience in design, development, and project strategy,
+            we aim to build products that make a real impact.
+        </p>
+    </div>
 
+    <!-- MISSION SECTION -->
+    <div class="section">
+        <h2>Our Mission</h2>
+        <p>
+            Our mission is to empower individuals and businesses through innovative and
+            user-friendly digital tools. We believe in technology that is accessible,
+            intuitive, and capable of improving everyday life.
+        </p>
+    </div>
 
-    <div id="galleries" class="galleries">
+    <!-- VALUES SECTION -->
+    <div class="section">
+        <h2>Our Values</h2>
+        <p>
+            In everything we do, we are guided by three key values: integrity, creativity,
+            and collaboration. These values shape our work culture and drive us to deliver
+            excellence in every project we undertake.
+        </p>
+    </div>
 
+    <!-- TEAM SECTION -->
+    <div class="section">
+        <h2>Meet the Team</h2>
 
-      <!-- Galería 1: Naturaleza -->
-      <section class="gallery" data-gallery="naturaleza">
-        <div class="gallery-header">
-          <h2>Naturaleza</h2>
-          <div class="controls"><span class="muted">8 imágenes</span></div>
+        <div class="team">
+
+            <div class="team-member">
+                <img src="Assets/close-up-smiley-man-gym.jpg" alt="Team Member">
+                <h3>John Doe</h3>
+                <p>Founder & Lead Developer</p>
+            </div>
+
+            <div class="team-member">
+                <img src="Assets/portrait-smiley-woman.jpg" alt="Team Member">
+                <h3>Sarah Smith</h3>
+                <p>UX/UI Designer</p>
+            </div>
+
+            <div class="team-member">
+                <img src="Assets/portrait-man-laughing.jpg" alt="Team Member">
+                <h3>Michael Brown</h3>
+                <p>Project Manager</p>
+            </div>
+
         </div>
-        <div class="thumb-grid">
-          <!-- Usamos imágenes públicas de Unsplash como ejemplo -->
-          <button class="thumb"
-            data-src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1500&auto=format&fit=crop"
-            aria-label="Montañas al amanecer">
-            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=800&auto=format&fit=crop"
-              alt="Montañas al amanecer">
-            <div class="meta">Montañas</div>
-          </button>
-          <button class="thumb"
-            data-src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1500&auto=format&fit=crop"
-            aria-label="Lago tranquilo">
-            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=800&auto=format&fit=crop"
-              alt="Lago tranquilo">
-            <div class="meta">Lago</div>
-          </button>
-          <button class="thumb"
-            data-src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1500&auto=format&fit=crop"
-            aria-label="Bosque en otoño">
-            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=800&auto=format&fit=crop"
-              alt="Bosque en otoño">
-            <div class="meta">Bosque</div>
-          </button>
-          <button class="thumb"
-            data-src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1500&auto=format&fit=crop"
-            aria-label="Cascada">
-            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=800&auto=format&fit=crop"
-              alt="Cascada">
-            <div class="meta">Cascada</div>
-          </button>
-        </div>
-      </section>
+    </div>
 
-
-      <!-- Galería 2: Ciudad -->
-      <section class="gallery" data-gallery="ciudad">
-        <div class="gallery-header">
-          <h2>Ciudad</h2>
-          <div class="controls"><span class="muted">6 imágenes</span></div>
-        </div>
-        <div class="thumb-grid">
-          <button class="thumb"
-            data-src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=1500&auto=format&fit=crop"
-            aria-label="Rascacielos nocturno">
-            <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=800&auto=format&fit=crop"
-              alt="Rascacielos nocturno">
-            <div class="meta">Rascacielos</div>
-          </button>
-          <button class="thumb"
-            data-src="https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?q=80&w=1500&auto=format&fit=crop"
-            aria-label="Calles de la ciudad">
-            <img src="https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?q=80&w=800&auto=format&fit=crop"
-              alt="Calles de la ciudad">
-            <div class="meta">Calles</div>
-          </button>
-          <button class="thumb"
-            data-src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?q=80&w=1500&auto=format&fit=crop"
-            aria-label="Café en la vereda">
-            <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?q=80&w=800&auto=format&fit=crop"
-              alt="Café en la vereda">
-            <div class="meta">Café</div>
-          </button>
-          <button class="thumb"
-            data-src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=1500&auto=format&fit=crop"
-            aria-label="Puente iluminado">
-            <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=800&auto=format&fit=crop"
-              alt="Puente iluminado">
-            <div class="meta">Puente</div>
-        </div>
+  
 
         <footer>
           <p data-key="footerText">© 2025 MySite. All rights reserved.</p>
