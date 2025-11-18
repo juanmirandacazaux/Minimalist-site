@@ -395,6 +395,10 @@ section {
 
 /* home */
 
+.about-image-block {
+    width: 50%;
+}
+
 /* ABOUT PAGE STRUCTURE */
 
 .about-container {
@@ -435,7 +439,7 @@ section {
 }
 
 .about-image-block img {
-    width: 100%;
+    width: 60%;
     border-radius: 10px;
     background: #ddd;
 }
@@ -488,6 +492,7 @@ section {
     margin-bottom: 15px;
     object-fit: cover;
 }
+
 
 
 
