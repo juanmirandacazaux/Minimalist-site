@@ -491,6 +491,7 @@ section {
 
 
 
+
 /* Accessible focus */
 .thumb:focus {
   outline: 3px solid rgba(14, 165, 164, 0.18)
