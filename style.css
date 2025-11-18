@@ -83,7 +83,8 @@ button:hover {
 
 
 .landing {
-  background-image: url('Assets/Background\ Image.jpg');
+  background-image: url('Assets/Landing\ Image.jpg');
+  background-size: cover;
 }
  
 
