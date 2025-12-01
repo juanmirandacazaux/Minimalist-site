@@ -35,13 +35,65 @@
         <p>Discover our story, our mission, and the values that guide everything we do.</p>
       </div>
       <div class="hero-image">
-        <img src="Assets/Hero Image.png" alt="About Hero Image">
+        <img src="Assets/Hero Image.jpg" alt="About Hero Image">
       </div>
     </div>
 
     <div class="divText">
       <p data-key="introductionText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel feugiat orci. Nullam venenatis leo id ante efficitur euismod. Proin sit amet massa viverra, dignissim velit interdum, molestie ipsum. Maecenas rhoncus eros eros, et pretium purus faucibus vitae. Mauris tempor odio et sapien venenatis malesuada. Sed et sem in lectus convallis eleifend. Duis lobortis lectus ex, a dictum tellus lobortis at. Duis vulputate lacus lorem, vitae pellentesque turpis interdum a. Sed egestas eleifend orci eu venenatis. Vestibulum non leo in nibh laoreet accumsan. Phasellus ut purus id erat pretium vestibulum. Sed tempus lorem interdum nibh venenatis rutrum.</p>
     </div>
+
+    <!-- Features Section -->
+    <section class="featured-section">
+      <h2>What We Offer</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">✸</div>
+          <h3>Minimal Design</h3>
+          <p>Clean, purposeful design that focuses on essential elements and user experience.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Fast Performance</h3>
+          <p>Optimized solutions that load quickly and provide seamless interactions.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">♻️</div>
+          <h3>Sustainable Code</h3>
+          <p>Efficient, maintainable code built with best practices and future scalability.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+      <h2>Our Process</h2>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <h3>Discovery</h3>
+          <p>Understanding your vision, goals, and requirements through detailed consultations.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <h3>Design</h3>
+          <p>Creating clean, functional designs that align with your brand and user needs.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <h3>Development</h3>
+          <p>Building robust solutions with attention to detail and performance optimization.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <h3>Delivery</h3>
+          <p>Thorough testing and deployment with ongoing support and maintenance.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Slider will be inserted here by JavaScript -->
+    <div id="image-slider-container"></div>
 
     <section class="about-section">
       <div class="about-text-block">
@@ -54,7 +106,35 @@
         </p>
       </div>
       <div class="about-image-block">
-        <img src="Assets/Our Story.png" alt="Our Story Image">
+        <img src="Assets/Stairs.jpg" alt="Our Story Image">
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial-track">
+          <div class="testimonial-slide">
+            <p class="testimonial-text">"Their minimalist approach transformed our digital presence. The attention to detail and focus on user experience was exceptional."</p>
+            <div class="testimonial-author">Alex Johnson</div>
+            <div class="testimonial-role">CEO, TechVision Inc.</div>
+          </div>
+          <div class="testimonial-slide">
+            <p class="testimonial-text">"Working with this team was a game-changer. They delivered exactly what we needed - clean, fast, and beautiful."</p>
+            <div class="testimonial-author">Maria Chen</div>
+            <div class="testimonial-role">Marketing Director, UrbanStyle</div>
+          </div>
+          <div class="testimonial-slide">
+            <p class="testimonial-text">"The simplicity and elegance of their solutions consistently impress us. Highly recommended for anyone seeking quality."</p>
+            <div class="testimonial-author">David Park</div>
+            <div class="testimonial-role">Founder, MinimalWorks</div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-btn testimonial-prev">←</button>
+          <button class="slider-btn testimonial-next">→</button>
+        </div>
       </div>
     </section>
 
@@ -64,11 +144,34 @@
         <p>
           Our mission is to empower individuals and companies through modern, efficient, 
           and user-friendly digital tools. We believe in technology that connects, inspires, 
-          and adapts to people—not the other way around.
+          and adapts to people not the other way around.
         </p>
       </div>
       <div class="about-image-block">
-        <img src="Assets/Our Mission.jpg" alt="Mission Image">
+        <img src="Assets/Bridge.jpg" alt="Mission Image">
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+      <h2>Our Impact</h2>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">150+</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">98%</div>
+          <div class="stat-label">Client Satisfaction</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">5</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
       </div>
     </section>
 
@@ -128,5 +231,15 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    // Insert image slider after DOM is loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      const sliderContainer = document.getElementById('image-slider-container');
+      if (sliderContainer) {
+        const slider = createImageSlider();
+        sliderContainer.appendChild(slider);
+      }
+    });
+  </script>
 </body>
 </html>
