@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Minimalist Site</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav>
-    <img src="Assets/Website Icon.png" id="logoImage" alt="">
+    <img src="Assets/Website Icon.png" id="logoImage" alt="Logo">
     
     <ul>
       <li><a href="index.html" data-key="navHome">Home</a></li>
@@ -22,125 +25,103 @@
     </select>
   </nav>
 
-  
-
   <section class="landing">
     <h2 data-key="landingTitle">Welcome to Our Minimalist Space</h2>
     <p data-key="landingText">Clean, simple, and fast — built with pure HTML, CSS, and JS.</p>
-    <p >You've arrived at a place built on the principle of "less, but better." <br> This is a minimalist website, and that choice is intentional.</p>
-  
     
-
-  <!-- HERO SECTION -->
-    <section class="hero-about">
-        <div class="hero-text">
-            <h1 data-key="about_title">About Us</h1>
-            <p data-key="about_subtitle">
-                Discover our story, our mission, and the values that guide everything we do.
-            </p>
-        </div>
-        <div class="hero-image">
-            <img src="Assets/Hero Image.png" alt="About Hero Image">
-        </div>
-    </section>
-
-
-  <div class="divText">
-    <pdata-key="introductionText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel feugiat orci. Nullam venenatis leo id ante efficitur euismod. Proin sit amet massa viverra, dignissim velit interdum, molestie ipsum. Maecenas rhoncus eros eros, et pretium purus faucibus vitae. Mauris tempor odio et sapien venenatis malesuada. Sed et sem in lectus convallis eleifend. Duis lobortis lectus ex, a dictum tellus lobortis at. Duis vulputate lacus lorem, vitae pellentesque turpis interdum a. Sed egestas eleifend orci eu venenatis. Vestibulum non leo in nibh laoreet accumsan. Phasellus ut purus id erat pretium vestibulum. Sed tempus lorem interdum nibh venenatis rutrum.</p>
-  </div>
-
- 
-
-
-  
-
-    <!-- OUR STORY -->
-    <section class="about-section">
-        <div class="about-text-block">
-            <h2 data-key="about_story_title">Our Story</h2>
-            <p data-key="about_story_text">
-                Our journey began with a simple idea: create meaningful digital solutions 
-                that improve the way people interact with technology. Over the years, our team 
-                has grown, evolved, and embraced new challenges, but our passion for innovation 
-                and high-quality experiences has remained the same.
-            </p>
-        </div>
-        <div class="about-image-block">
-            <img src="Assets/Our Story.png" alt="Our Story Image">
-        </div>
-    </section>
-
-    <!-- MISSION SECTION -->
-    <section class="about-section reverse">
-        <div class="about-image-block ">
-            <img src="Assets/Our Mission.jpg" alt="Mission Image">
-        </div>
-        <div class="about-text-block ourMission">
-            <h2 data-key="about_mission_title">Our Mission</h2>
-            <p data-key="about_mission_text">
-                Our mission is to empower individuals and companies through modern, efficient, 
-                and user-friendly digital tools. We believe in technology that connects, inspires, 
-                and adapts to people—not the other way around.
-            </p>
-        </div>
-    </section>
-
-    <!-- VALUES -->
-    <section class="values-section">
-        <h2 data-key="about_values_title" class="OurValuesTitle">Our Values</h2>
-        <div class="values-grid">
-            <div class="value-card">
-                <h3 data-key="about_value_1_title">Innovation</h3>
-                <p data-key="about_value_1_text">
-                    We constantly explore new ideas and technologies to deliver modern and
-                    future-ready solutions.
-                </p>
-            </div>
-
-            <div class="value-card">
-                <h3 data-key="about_value_2_title">Integrity</h3>
-                <p data-key="about_value_2_text">
-                    Honesty, transparency, and trust guide every decision and interaction we make.
-                </p>
-            </div>
-
-            <div class="value-card">
-                <h3 data-key="about_value_3_title">Collaboration</h3>
-                <p data-key="about_value_3_text">
-                    We believe great results come from working together with passion and respect.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- TEAM SECTION -->
-    <div class="section">
-        <h2>Meet the Team</h2>
-
-        <div class="team">
-
-            <div class="team-member">
-                <img src="Assets/close-up-smiley-man-gym.jpg" alt="Team Member">
-                <h3>John Doe</h3>
-                <p>Founder & Lead Developer</p>
-            </div>
-
-            <div class="team-member">
-                <img src="Assets/portrait-smiley-woman.jpg" alt="Team Member">
-                <h3>Sarah Smith</h3>
-                <p>UX/UI Designer</p>
-            </div>
-
-            <div class="team-member">
-                <img src="Assets/portrait-man-laughing.jpg" alt="Team Member">
-                <h3>Michael Brown</h3>
-                <p>Project Manager</p>
-            </div>
-
-        </div>
+    <div class="hero-about">
+      <div class="hero-text">
+        <h1 data-key="aboutTitle">About Us</h1>
+        <p>Discover our story, our mission, and the values that guide everything we do.</p>
+      </div>
+      <div class="hero-image">
+        <img src="Assets/Hero Image.png" alt="About Hero Image">
+      </div>
     </div>
 
-</section>
+    <div class="divText">
+      <p data-key="introductionText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel feugiat orci. Nullam venenatis leo id ante efficitur euismod. Proin sit amet massa viverra, dignissim velit interdum, molestie ipsum. Maecenas rhoncus eros eros, et pretium purus faucibus vitae. Mauris tempor odio et sapien venenatis malesuada. Sed et sem in lectus convallis eleifend. Duis lobortis lectus ex, a dictum tellus lobortis at. Duis vulputate lacus lorem, vitae pellentesque turpis interdum a. Sed egestas eleifend orci eu venenatis. Vestibulum non leo in nibh laoreet accumsan. Phasellus ut purus id erat pretium vestibulum. Sed tempus lorem interdum nibh venenatis rutrum.</p>
+    </div>
+
+    <section class="about-section">
+      <div class="about-text-block">
+        <h2>Our Story</h2>
+        <p>
+          Our journey began with a simple idea: create meaningful digital solutions 
+          that improve the way people interact with technology. Over the years, our team 
+          has grown, evolved, and embraced new challenges, but our passion for innovation 
+          and high-quality experiences has remained the same.
+        </p>
+      </div>
+      <div class="about-image-block">
+        <img src="Assets/Our Story.png" alt="Our Story Image">
+      </div>
+    </section>
+
+    <section class="about-section reverse">
+      <div class="about-text-block">
+        <h2>Our Mission</h2>
+        <p>
+          Our mission is to empower individuals and companies through modern, efficient, 
+          and user-friendly digital tools. We believe in technology that connects, inspires, 
+          and adapts to people—not the other way around.
+        </p>
+      </div>
+      <div class="about-image-block">
+        <img src="Assets/Our Mission.jpg" alt="Mission Image">
+      </div>
+    </section>
+
+    <section class="values-section">
+      <h2>Our Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <h3>Innovation</h3>
+          <p>
+            We constantly explore new ideas and technologies to deliver modern and
+            future-ready solutions.
+          </p>
+        </div>
+
+        <div class="value-card">
+          <h3>Integrity</h3>
+          <p>
+            Honesty, transparency, and trust guide every decision and interaction we make.
+          </p>
+        </div>
+
+        <div class="value-card">
+          <h3>Collaboration</h3>
+          <p>
+            We believe great results come from working together with passion and respect.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section">
+      <h2>Meet the Team</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="Assets/close-up-smiley-man-gym.jpg" alt="Team Member">
+          <h3>John Doe</h3>
+          <p>Founder & Lead Developer</p>
+        </div>
+
+        <div class="team-card">
+          <img src="Assets/portrait-smiley-woman.jpg" alt="Team Member">
+          <h3>Sarah Smith</h3>
+          <p>UX/UI Designer</p>
+        </div>
+
+        <div class="team-card">
+          <img src="Assets/portrait-man-laughing.jpg" alt="Team Member">
+          <h3>Michael Brown</h3>
+          <p>Project Manager</p>
+        </div>
+      </div>
+    </section>
+  </section>
 
   <footer>
     <p data-key="footerText">© 2025 MySite. All rights reserved.</p>

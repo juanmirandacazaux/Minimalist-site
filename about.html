@@ -6,11 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
-<body class="bodyAbout">
+<body>
   <nav>
-    <h1 id="navTitle">MySite</h1>
+    <img src="Assets/Website Icon.png" id="logoImage" alt="Logo">
+    
     <ul>
       <li><a href="index.html" data-key="navHome">Home</a></li>
       <li><a href="about.html" data-key="navAbout">About</a></li>
@@ -23,71 +27,102 @@
     </select>
   </nav>
 
-  <!-- ABOUT SECTION -->
-    <div class="section aboutSection">
+  <section class="landing">
+    <div class="hero-about">
+      <div class="hero-text">
+        <h1 data-key="aboutTitle">About Us</h1>
+        <p>Discover our story, our mission, and the values that guide everything we do.</p>
+      </div>
+      <div class="hero-image">
+        <img src="Assets/Hero Image.png" alt="About Hero Image">
+      </div>
+    </div>
+
+    <section class="about-section">
+      <div class="about-text-block">
         <h2>Who We Are</h2>
         <p>
-            We are a passionate group dedicated to creating meaningful digital experiences.
-            Our vision is to deliver high-quality solutions that help people connect, learn,
-            and grow. With years of experience in design, development, and project strategy,
-            we aim to build products that make a real impact.
+          We are a passionate group dedicated to creating meaningful digital experiences.
+          Our vision is to deliver high-quality solutions that help people connect, learn,
+          and grow. With years of experience in design, development, and project strategy,
+          we aim to build products that make a real impact.
         </p>
-    </div>
+      </div>
+      <div class="about-image-block">
+        <img src="Assets/Our Story.png" alt="Our Story Image">
+      </div>
+    </section>
 
-    <!-- MISSION SECTION -->
-    <div class="section">
+    <section class="about-section reverse">
+      <div class="about-text-block">
         <h2>Our Mission</h2>
         <p>
-            Our mission is to empower individuals and businesses through innovative and
-            user-friendly digital tools. We believe in technology that is accessible,
-            intuitive, and capable of improving everyday life.
+          Our mission is to empower individuals and businesses through innovative and
+          user-friendly digital tools. We believe in technology that is accessible,
+          intuitive, and capable of improving everyday life.
         </p>
-    </div>
+      </div>
+      <div class="about-image-block">
+        <img src="Assets/Our Mission.jpg" alt="Mission Image">
+      </div>
+    </section>
 
-    <!-- VALUES SECTION -->
-    <div class="section">
-        <h2>Our Values</h2>
-        <p>
-            In everything we do, we are guided by three key values: integrity, creativity,
-            and collaboration. These values shape our work culture and drive us to deliver
-            excellence in every project we undertake.
-        </p>
-    </div>
-
-    <!-- TEAM SECTION -->
-    <div class="section">
-        <h2>Meet the Team</h2>
-
-        <div class="team">
-
-            <div class="team-member">
-                <img src="Assets/close-up-smiley-man-gym.jpg" alt="Team Member">
-                <h3>John Doe</h3>
-                <p>Founder & Lead Developer</p>
-            </div>
-
-            <div class="team-member">
-                <img src="Assets/portrait-smiley-woman.jpg" alt="Team Member">
-                <h3>Sarah Smith</h3>
-                <p>UX/UI Designer</p>
-            </div>
-
-            <div class="team-member">
-                <img src="Assets/portrait-man-laughing.jpg" alt="Team Member">
-                <h3>Michael Brown</h3>
-                <p>Project Manager</p>
-            </div>
-
+    <section class="values-section">
+      <h2>Our Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <h3>Innovation</h3>
+          <p>
+            We constantly explore new ideas and technologies to deliver modern and
+            future-ready solutions.
+          </p>
         </div>
-    </div>
 
-  
+        <div class="value-card">
+          <h3>Integrity</h3>
+          <p>
+            Honesty, transparency, and trust guide every decision and interaction we make.
+          </p>
+        </div>
 
-        <footer>
-          <p data-key="footerText">© 2025 MySite. All rights reserved.</p>
-        </footer>
+        <div class="value-card">
+          <h3>Collaboration</h3>
+          <p>
+            We believe great results come from working together with passion and respect.
+          </p>
+        </div>
+      </div>
+    </section>
 
-        <script src="script.js"></script>
+    <section class="team-section">
+      <h2>Meet the Team</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="Assets/close-up-smiley-man-gym.jpg" alt="Team Member">
+          <h3>John Doe</h3>
+          <p>Founder & Lead Developer</p>
+        </div>
+
+        <div class="team-card">
+          <img src="Assets/portrait-smiley-woman.jpg" alt="Team Member">
+          <h3>Sarah Smith</h3>
+          <p>UX/UI Designer</p>
+        </div>
+
+        <div class="team-card">
+          <img src="Assets/portrait-man-laughing.jpg" alt="Team Member">
+          <h3>Michael Brown</h3>
+          <p>Project Manager</p>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <footer>
+    <p data-key="footerText">© 2025 MySite. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
