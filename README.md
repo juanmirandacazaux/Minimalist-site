@@ -5,7 +5,7 @@ Includes a Nav, Landing Page, About Us, Contact/Call To Action, and Footer, with
 
 🧩 Features
 
-✅ Pure HTML, CSS, and JS — no frameworks required
+✅ Pure HTML, CSS, and JS 
 
 🌍 Multi-language support (EN / ES / FR)
 
