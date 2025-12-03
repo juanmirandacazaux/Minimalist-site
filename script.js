@@ -82,27 +82,32 @@ function initImageSlider(sliderSection) {
   // Define slider data
   const slides = [
     {
-      image: 'Assets/Our Mission.jpg',
+      image: 'Assets/Work4.jpg',
       title: 'Minimal Design Project',
       description: 'A clean and functional design solution for modern businesses.'
     },
     {
-      image: 'Assets/Our Story.png',
+      image: 'Assets/Work5.jpg',
       title: 'Digital Experience',
       description: 'Creating seamless digital journeys for global clients.'
     },
     {
-      image: 'Assets/Hero Image.png',
+      image: 'Assets/Work1.jpg',
       title: 'Brand Identity',
       description: 'Developing strong visual identities that stand out.'
     },
     {
-      image: 'Assets/Website Icon.png',
+      image: 'Assets/Work2.jpg',
+      title: 'User Friendly Designs',
+      description: 'Create cool designs.'
+    },
+    {
+      image: 'Assets/Work3.jpg',
       title: 'User Interface Design',
       description: 'Intuitive interfaces that enhance user experience.'
     },
     {
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80',
+      image: 'Assets/Work6.jpg',
       title: 'Web Development',
       description: 'Building responsive and performant websites.'
     }
