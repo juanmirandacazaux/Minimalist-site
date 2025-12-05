@@ -26,9 +26,8 @@ nav {
 }
 
 #logoImage {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
+    width: 7%;
+    object-fit: contain;
 }
 
 nav ul {
