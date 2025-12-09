@@ -122,6 +122,11 @@ nav a:hover::after {
   border-radius: 2px;
 }
 
+/* Our Promise section */
+.ourPromiseText {
+    text-align: center;
+}
+
 /* About Sections */
 .about-section {
   display: flex;
